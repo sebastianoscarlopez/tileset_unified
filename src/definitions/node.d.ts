@@ -1,5 +1,5 @@
 export interface NodeDirectory {
   dirPath: string
-  file?: FileData
+  files?: string[]
   directories?: string[]
 }

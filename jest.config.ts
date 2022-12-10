@@ -15,6 +15,6 @@ export default async (): Promise<Config.InitialOptions> => {
     transform: { "^.+\\.tsx?$": "ts-jest" },
     globalTeardown: "<rootDir>/src/tests/jest-globals-teardown.ts",
     forceExit: true,
-    testTimeout: 600000,
+    testTimeout: 900000,
   };
 };
