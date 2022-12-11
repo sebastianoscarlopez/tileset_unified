@@ -4,10 +4,9 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "watch": "tsc -w",
     "test": "jest --config jest.config.ts",
     "start": "node --loader ts-node/esm src/index.ts",
-    "build": "tsc"
+    "serve:tileset": "node --loader ts-node/esm src/serve_tileset"
   },
   "keywords": [],
   "author": "",

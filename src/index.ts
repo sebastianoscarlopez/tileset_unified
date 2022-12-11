@@ -3,7 +3,6 @@ import { getTilesetWithRelativePath, unifiedFromRootPath, writeTilesetToFile } f
 import dotenv from "dotenv"
 dotenv.config()
 
-console.log(process.env.NODE_ENV, process.env.NODE_PATH_IN_DIR)
 const rootFilePath = `${process.env.NODE_PATH_IN_DIR}/${process.env.NODE_PATH_IN_ROOT}`;
 const fileUnifiedPath = `${process.env.NODE_PATH_OUT}/${process.env.NODE_FILE_UNIFIED}`;
 
