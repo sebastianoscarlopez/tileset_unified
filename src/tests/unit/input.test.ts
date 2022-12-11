@@ -1,16 +1,11 @@
 import fs from 'fs'
 import path from "path";
-import { getTilesetFiles, getFilesAndDirectories, readRootFile, writeListOfFileNamesToFile } from "../../readStructureTree";
+import { getTilesetFiles, getFilesAndDirectories, writeListOfFileNamesToFile } from "../../readStructureTree";
 
 import dotenv from "dotenv"
 dotenv.config()
 
 describe('Check files within input directory are ok', () => {
-
-  it('Root json is readable', async () => {
-    const tileset = await readRootFile(`${process.env.NODE_PATH_IN_DIR}/${process.env.NODE_PATH_IN_ROOT}`);
-    expect(tileset?.root).toBeDefined();
-  });
   it('Get list json files and directories from NODE_PATH_IN_DIR', async () => {
     const tilesetFiles = await getFilesAndDirectories(process.env.NODE_PATH_IN_DIR ?? '')
     expect(tilesetFiles?.dirPath).toBeDefined()

@@ -8,7 +8,7 @@ export interface Tile {
     box: number[]
   },
   geometricError: number,
-  refine: "REPLACE" | "ADD",
+  refine: "REPLACE" | "ADD"
 }
 
 export interface TileRoot {

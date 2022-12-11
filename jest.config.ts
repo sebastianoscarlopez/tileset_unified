@@ -16,5 +16,6 @@ export default async (): Promise<Config.InitialOptions> => {
     globalTeardown: "<rootDir>/src/tests/jest-globals-teardown.ts",
     forceExit: true,
     testTimeout: 900000,
+    bail: true,
   };
 };
